@@ -6,10 +6,9 @@ import time
 
 
 try:
-    browser = webdriver.Chrome()
-
     class TestRegistration(unittest.TestCase):
         def test_registration_1(self):
+            browser = webdriver.Chrome()
             link_1 = "http://suninjuly.github.io/registration1.html"
             browser.get(link_1)
 
@@ -36,6 +35,7 @@ try:
             self.assertEqual(welcome_text, "Congratulations! You have successfully registered!", "Error_1")
 
         def test_registration_2(self):
+            browser = webdriver.Chrome()
             link_2 = "http://suninjuly.github.io/registration2.html"
             browser.get(link_2)
             # Ваш код, который заполняет обязательные поля

@@ -24,8 +24,8 @@ class TestMainPage1():
         browser.get(link)
         browser.find_element(By.CSS_SELECTOR, ".basket-mini .btn-group > a")
 
-    @pytest.mark.xfail
-    def test_guest_should_see_basket_link_on_the_main_page(self, browser):
+    @pytest.mark.xfail(strict=True)
+    def test_guest_should_see_basket_link_on_the_main_page_2(self, browser):
         browser.get(link)
         browser.find_element(By.CSS_SELECTOR, ".basket-mini .btn-group > a")
 
